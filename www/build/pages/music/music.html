@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar primary align-title="center">
+    <ion-title>
+      la Biblioteca
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+
+    <button ion-item *ngFor="let song of music" (click)="openDetailPage(song)">
+      <img *ngIf="song.smallImg" [src]="song.smallImg" style="height:85px; width:85px;float:left;padding-left:5px;padding-right:10px;">
+      <div style="padding-top:10px;">
+        <h2 *ngIf="song">{{song.name}}</h2>
+        <p *ngIf="song">Artist: {{song.artist}}</p>
+        <p *ngIf="song">Album: {{song.album}}</p>
+      </div>
+
+    </button>
+
+
+  </ion-list>
+</ion-content>

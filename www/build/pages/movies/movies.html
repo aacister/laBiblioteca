@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar primary align-title="center">
+    <ion-title>
+      la Biblioteca
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <button ion-item *ngFor="let movie of movies"  (click)="openDetailPage(movie)">
+      <img [src]="'http://image.tmdb.org/t/p/w92' + movie.posterPath" style="height:50px; width:75px;float:left;padding-left:20px;padding-right:10px;">
+        <div style="padding-top:10px;">
+      <h2 *ngIf="movie">{{movie.title}}</h2>
+      <p *ngIf="movie">{{movie.overview}}</p>
+    </div>
+
+    </button>
+  </ion-list>
+</ion-content>

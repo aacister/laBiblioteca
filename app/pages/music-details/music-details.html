@@ -1,0 +1,20 @@
+
+  <ion-header>
+
+    <ion-navbar dark>
+      <ion-title>{{song.name}}</ion-title>
+    </ion-navbar>
+
+  </ion-header>
+  <ion-content padding>
+    <ion-card>
+        <img *ngIf="song.largeImg" class="header" [src]="song.largeImg" style="height:500px;"/>
+        <div class="card-title-container" style="padding-top: 10px;padding-left:20%;padding-right:20%;">
+            <h2 class="card-title">{{song.name}}</h2>
+            <p>album: {{song.album}}</p>
+            <p>by {{song.artist}}</p>
+          <p><a [href]="song.preview_url" target="_blank">Preview</a></p>
+        </div>
+    </ion-card>
+
+</ion-content>

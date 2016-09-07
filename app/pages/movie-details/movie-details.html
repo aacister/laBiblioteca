@@ -1,0 +1,19 @@
+
+  <ion-header>
+
+    <ion-navbar dark>
+      <ion-title>{{movie.title}}</ion-title>
+    </ion-navbar>
+
+  </ion-header>
+  <ion-content padding>
+    <ion-card>
+          <img [src]="'http://image.tmdb.org/t/p/w92' + movie.posterPath" style="heigh:200px; width:200px;" >
+        <div style="padding-top:5px;">
+            <h2 class="card-title">{{movie.title}}</h2>
+            <p>{{movie.overview}}</p>
+        </div>
+    </ion-card>
+
+
+</ion-content>
