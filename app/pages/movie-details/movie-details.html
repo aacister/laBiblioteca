@@ -7,10 +7,10 @@
 
   </ion-header>
   <ion-content padding>
-    <ion-card>
-          <img [src]="'http://image.tmdb.org/t/p/w92' + movie.posterPath" style="heigh:200px; width:200px;" >
-        <div style="padding-top:5px;">
-            <h2 class="card-title">{{movie.title}}</h2>
+    <ion-card style="margin:auto; padding:10px;">
+          <img [src]="'http://image.tmdb.org/t/p/w92' + movie.posterPath" style="height:300px; width:350px;" >
+        <div style="margin:auto; width: 80%; padding:10px;">
+            <h2>{{movie.title}}</h2>
             <p>{{movie.overview}}</p>
         </div>
     </ion-card>

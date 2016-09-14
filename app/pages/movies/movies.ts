@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams, Loading} from 'ionic-angular';
+import { NavController, NavParams} from 'ionic-angular';
 import {MovieService} from '../../providers/movie-service/movie-service';
 import {MovieDetailsPage} from '../movie-details/movie-details';
 import {Movie} from '../../models/movie';

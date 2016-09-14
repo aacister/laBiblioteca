@@ -22,9 +22,9 @@ export class MovieService {
     this.movies = <Subject<Movie>>this.wsMovieService
             .connect(LaBibliotecaConfig.MOVIE_SOCKET)
             .map((response: MessageEvent): Movie => {
-                console.log('Movie Service mapping');
+          //      console.log('Movie Service mapping');
                 let data = JSON.parse(response.data);
-                console.log('MovieService movies: ' + JSON.stringify(data));
+          //      console.log('MovieService movies: ' + JSON.stringify(data));
                 return new Movie(data.title,
                            data.overview,
                            data.release_date,

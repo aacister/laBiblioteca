@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams} from 'ionic-angular';
+import { ModalController } from 'ionic-angular';
+import {MusicPreviewPage} from '../music-preview/music-preview';
 
 
 @Component({
@@ -9,8 +11,19 @@ export class MusicDetailsPage {
 
   song: any;
 
-  constructor(private nav: NavController, private navParams: NavParams) {
-      this.song = this.navParams.get('song');
+  constructor(private nav: NavController, private navParams: NavParams, private modalCtrl: ModalController) {
+      this.song = navParams.get('song');
+
   }
+
+  previewSong(){
+
+        let modal = this.modalCtrl.create(MusicPreviewPage, {song: this.song});
+
+
+        modal.present();
+
+    }
+
 
 }

@@ -1,7 +1,7 @@
 
 
 import { Component } from '@angular/core';
-import { NavController, NavParams, Loading} from 'ionic-angular';
+import { NavController, NavParams} from 'ionic-angular';
 import {MusicService} from '../../providers/music-service/music-service';
 import {MusicDetailsPage} from '../music-details/music-details';
 import {Song} from '../../models/song';

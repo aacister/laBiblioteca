@@ -21,7 +21,7 @@ export class MusicService {
             .connect(LaBibliotecaConfig.MUSIC_SOCKET)
             .map((response: MessageEvent): Song => {
                 let data = JSON.parse(response.data);
-                console.log('MusicService songs: ' + JSON.stringify(data));
+        //        console.log('MusicService songs: ' + JSON.stringify(data));
                 return new Song(data.name,
                          data.album.name,
                          data.artists[0].name,

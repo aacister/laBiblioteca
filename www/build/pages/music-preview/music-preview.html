@@ -1,0 +1,18 @@
+
+  <ion-header>
+    <ion-navbar dark>
+      <ion-title>{{song.name}}</ion-title>
+      <ion-buttons end>
+    <button (click)="close()"><ion-icon name="close"></ion-icon></button>
+  </ion-buttons>
+    </ion-navbar>
+
+  </ion-header>
+  <ion-content padding style="background-color: rgba(255,255,255,0.75);">
+ <!--<object width="400" height="400" [data]="previewUrl"></object> -->
+<!--<iframe [src]="previewUrl" width="640" height="360" frameborder="0"> </iframe>-->
+<audio id=”AudioSong” [src]="previewUrl" controls="1" autoplay>
+ </audio>
+
+
+</ion-content>
