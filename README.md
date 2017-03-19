@@ -1,5 +1,5 @@
 # laBiblioteca
-Mobile app built in Ionic2, Angular2, and Typescript. 
+Mobile app built in Ionic2, Angular2, Typescript, and RxJs.
 
 Utilizes Spotify and MovieDb data from laBibliotecaPubSubWebServer.
 
@@ -14,4 +14,3 @@ Flow of laBiblioteca:
 4) LaBiblioteca client subscribes to observable from its respective movie or music websocket.
 
 5) Ionic 2 displays streaming data, unshifting the latest record to top of display.
-
